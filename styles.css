@@ -27,3 +27,34 @@ pre {
 p.pclass {
     color:blanchedalmond;
 }
+
+a:link{
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#anchor1{
+    width: 25%;
+    height: 25%;
+    border: 0;
+}
+
