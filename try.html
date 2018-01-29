@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="view-port" content="with=device-width, initial-scale=1.0">
+        <title>Try Number 1</title>
+        <style>
+            .head,.link, .about, .foot{
+                background-color:#c3c2c2;
+                color:#747373;
+            }
+            .main{
+                /* background-color:#c3c2c2; */
+                color:#747373;
+            }
+            .head{
+                /* width: 100%; */
+                padding: 15px;
+                text-align: center;
+            }
+            .links{
+
+                float: left;
+                padding: 20px;
+                text-align:center;
+            }
+            .link{
+                padding: 8px;
+                margin-top: 7%;
+            }
+            .about{
+                float: left;
+                padding: 15px;
+                width: 20%;
+                margin-top: 7%;
+                text-align: center;
+                
+            }
+            .main{
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+            }
+            .foot{
+                /* width: 100%; */
+                /* float: left; */
+                text-align: center;
+                margin-top: 7%;
+                padding: 10px;
+
+                
+            }
+
+            @media only screen and (max-with:620px){
+                .main, .about, .links{
+                    width: 100%;
+                }
+            }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <h1>Hello World</h1>
+        </div>
+        <div style="overflow:auto">
+                <div class="links">
+                        <div class="link">
+                                <h3>Link1</h3>
+                            </div>
+                            <div class="link">
+                                <h3>Link2</h3>
+                            </div>
+                            <div class="link">
+                                <h3>Link3</h3>
+                            </div>
+                            <div class="link">
+                                <h3>Link4</h3>
+                            </div>
+                </div>
+                <div class="main">
+                    <h2>Lorum Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="about">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+
+        </div>
+        
+        <div class="foot">
+            <p>&copy; copyright imfaisal.com</p>
+        </div>
+    </body>
+</html>

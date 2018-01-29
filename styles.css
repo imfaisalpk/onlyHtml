@@ -1,6 +1,44 @@
 body {background-color:tomato;}
 
-div.container {
+/* .left {
+    background-color: red;
+    float: left;
+    width: 20%;
+    padding: 30px;
+}
+.right{
+    background-color: green;
+    float: left;
+    width: 20%;
+    padding: 30px;
+    
+}
+
+.main{
+    background-color: blue;
+    float: left;
+    width: 40%;
+    padding: 30px;
+    
+}
+
+@media (max-width: 900px){
+    .left, .right, .main{
+        width: 100%;
+    }
+} */
+
+
+
+/* img{
+    max-width: auto;
+    width: 100%;
+    height: auto;
+} */
+
+
+
+/* div.container {
     width: 100%;
     border: 1px solid gray;
 }
@@ -34,7 +72,7 @@ article {
     border-left: 1px solid gray;
     padding: 1em;
     overflow: hidden;
-}
+} */
 
 
 
