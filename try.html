@@ -5,7 +5,10 @@
         <meta name="view-port" content="with=device-width, initial-scale=1.0">
         <title>Try Number 1</title>
         <style>
-            .head,.link, .about, .foot{
+            *{
+                box-sizing: border-box;
+            }
+            .head,.menuitem, .about, .foot{
                 background-color:#c3c2c2;
                 color:#747373;
             }
@@ -18,13 +21,14 @@
                 padding: 15px;
                 text-align: center;
             }
-            .links{
+            .menu{
 
                 float: left;
                 padding: 20px;
                 text-align:center;
+                width: 20%;
             }
-            .link{
+            .menuitem{
                 padding: 8px;
                 margin-top: 7%;
             }
@@ -52,7 +56,7 @@
             }
 
             @media only screen and (max-with:620px){
-                .main, .about, .links{
+                .menu, .main, .about{
                     width: 100%;
                 }
             }
@@ -66,20 +70,26 @@
             <h1>Hello World</h1>
         </div>
         <div style="overflow:auto">
-                <div class="links">
+                <!-- <div class="links">
                         <div class="link">
                                 <h3>Link1</h3>
-                            </div>
-                            <div class="link">
+                        </div>
+                        <div class="link">
                                 <h3>Link2</h3>
-                            </div>
-                            <div class="link">
+                        </div>
+                        <div class="link">
                                 <h3>Link3</h3>
-                            </div>
-                            <div class="link">
+                        </div>
+                        <div class="link">
                                 <h3>Link4</h3>
-                            </div>
-                </div>
+                        </div>
+                </div> -->
+                <div class="menu">
+                        <div class="menuitem">Link 1</div>
+                        <div class="menuitem">Link 2</div>
+                        <div class="menuitem">Link 3</div>
+                        <div class="menuitem">Link 4</div>
+                      </div>
                 <div class="main">
                     <h2>Lorum Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
