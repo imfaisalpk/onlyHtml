@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Html Forms</title>
+    </head>
+    <body>
+        <h1>Html Forms</h1>
+        <form action="/form_handler.php" target="_blank" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            First Name: <input type="text" name="fname"><br/>
+            Last Name: <input type="text" name="lname">
+            <hr/>
+            <fieldset>
+                <legend>Gender Selection:</legend>
+                <input type="radio" name="gender" value="male" checked="checked">Male <br/>
+                <input type="radio" name="gender" value="female"> Female <br/>
+    
+                <input type="submit" name="submit" value="submit">
+            </fieldset>
+            <hr/>
+            options:
+            <select name="cars" size="2" multiple="multiple">
+                <option value="Toyota" selected="selected">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Tesla">Tesla</option>
+                
+            </select>
+            <h3>Feedback:</h3>
+            <!-- rows="10" cols="20" -->
+            <textarea name="feedback" style="width: 200px; height:200px;" >
+                Hey Baby!
+            </textarea>
+            <br/>
+            <button type="button" onclick="alert('Hello Pakistan!')"> Click Me!</button>
+
+            <!-- HTML5 elements -->
+            <br/>
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="IE">IE</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+                
+            </datalist>
+
+            <hr/>
+            0
+            <input type="range" name="a" id="a" value="50">
+            100 + 
+            <input type="number" name="b" id="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+
+            
+        </form>
+
+    </body>
+</html>
