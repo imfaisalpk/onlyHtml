@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Html Forms</h1>
-        <form action="/form_handler.php" target="_blank" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <form action="/form_handler.php" target="_blank" method="get" oninput="x.value=parseInt(a.value)+parseInt(b.value)" >
             First Name: <input type="text" name="fname"><br/>
             Last Name: <input type="text" name="lname">
             <hr/>
@@ -15,7 +15,7 @@
                 <input type="radio" name="gender" value="male" checked="checked">Male <br/>
                 <input type="radio" name="gender" value="female"> Female <br/>
     
-                <input type="submit" name="submit" value="submit">
+                <input type="submit" name="submit" value="submit" formmethod="post">
             </fieldset>
             <hr/>
             options:
@@ -51,6 +51,38 @@
             <input type="number" name="b" id="b" value="50">
             =
             <output name="x" for="a b"></output>
+
+            <br/>
+            <hr/>
+            <input type="password" name="pswd" value="mfaisal" readonly="readonly"/>
+            <br/>
+            <input type="reset" name="reset" value="Reset" />
+
+            <br/>
+
+            <input type="checkbox" name="class1" value="9th" /> 9th Class <br>
+            <input type="checkbox" name="class2" value="10th"/> 10th classs <br>
+
+            <hr/>
+            Select your color:
+            <input type="color" name="favcolor"/><br/>
+            Select Date:
+            <input type="date" name="setdate" max="2000-01-01" min="1993-01-01"/><br/>
+            Birthday (Date and Time): <input type="datetime-local" name="bddatetime"/><br/>
+            Email: <input type="email" name="emailID" autofocus="autofocus"/><br/>
+            Month and Year: <input type="month" name="bdymonth"/><br/>
+            Number: <input type="number" name="numeric" step="3"/><br/>
+            Google:<input type="search" name="googlesearch"/><br/>
+            Telephone: <input type="tel" name="telephone"/><br/>
+            Time: <input type="time" name="setTime"/><br/>
+            Url: <input type="url" name="seturl"/><br/>
+            Week and Year:<input type="week" name="weekAndYear" disabled="disabled"/><br/>
+            
+            Select Image: <input type="file" name="filepicker" multiple="multiple"/><br/>
+            Country Code: <input type="text" name="ccode" pattern="[A-Za-z]{3}" title="three letters baby." placeholder="123" required="required"/><br/>
+
+            
+            
 
             
         </form>
